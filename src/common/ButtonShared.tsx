@@ -1,6 +1,12 @@
-export const ButtonShared = () => {
+interface ButtonSharedProps {
+	className?: string;
+}
+export const ButtonShared = ({ className }: ButtonSharedProps) => {
 	return (
-		<button type="button" className="rounded-full bg-slate-300 size-8 cursor-pointer flex items-center justify-center">
+		<button
+			type="button"
+			className={`rounded-full aspect-square bg-slate-300 hover:bg-slate-400/60 active:bg-slate-400/60 size-8 cursor-pointer flex items-center justify-center ${className}`}
+		>
 			<svg
 				className="size-5 text-slate-500 fill-slate-500"
 				xmlns="http://www.w3.org/2000/svg"
