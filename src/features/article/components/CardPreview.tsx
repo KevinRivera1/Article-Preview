@@ -1,7 +1,17 @@
+import { useContext } from 'react';
 import { ButtonShared } from '../../../common/ButtonShared';
 import { Tooltip } from '../../../common/Tooltip';
+import { ShowContext } from '../../../contexts/ShowContext';
 
 export const CardPreview = () => {
+	const context = useContext(ShowContext);
+
+	if (!context) {
+		throw new Error('CardPreview must be used within a ShowContextProvider');
+	}
+
+	const { show } = context;
+
 	return (
 		<article className="w-[21rem] h-max bg-white overflow-hidden rounded-xl md:overflow-visible md:flex md:w-full md:h-max lg:w-[45rem] md:pb-0 shadow-2xl">
 			<img
@@ -28,7 +38,7 @@ export const CardPreview = () => {
 					</div>
 					<ButtonShared />
 				</footer>
-				<Tooltip />
+				{show && <Tooltip />}
 			</div>
 		</article>
 	);
