@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "@fontsource-variable/manrope";
+
+@theme {
+	--color-Very-Grayish-Blue: hsl(217, 19%, 35%);
+	--color-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+	--color-Grayish-Blue: hsl(212, 23%, 69%);
+	--color-Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+	font-family: "Manrope Variable", sans-serif;
+	background: hsl(217, 19%, 35%);
+}
