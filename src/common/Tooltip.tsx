@@ -9,7 +9,7 @@ interface TooltipProps {
 export const Tooltip = ({ className }: TooltipProps) => {
 	return (
 		<div
-			className={`absolute lg:bottom-[96px] lg:left-73 lg:tooltip lg:w-max px-6 py-2 bg-slate-700 lg:rounded-2xl text-white flex gap-2 items-center justify-around bottom-0 right-0 left-0 h-20 lg:h-auto ${className}`}
+			className={`absolute lg:bottom-[96px] lg:left-73 lg:tooltip lg:w-max px-6 py-2 bg-slate-700 lg:rounded-xl text-white flex gap-2 items-center justify-around bottom-0 right-0 left-0 h-20 lg:h-auto ${className}`}
 		>
 			<small className="font-bold">SHARE</small>
 

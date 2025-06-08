@@ -1,11 +1,7 @@
 import { ArticleContainer } from './features/article/containers/ArticleContainer';
 
 function App() {
-	return (
-		<>
-			<ArticleContainer />
-		</>
-	);
+	return <ArticleContainer />;
 }
 
 export default App;
