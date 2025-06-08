@@ -1,5 +1,7 @@
+import { ArticleContainer } from './features/article/containers/ArticleContainer';
+
 function App() {
-	return <></>;
+	return <ArticleContainer />;
 }
 
 export default App;

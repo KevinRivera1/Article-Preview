@@ -12,6 +12,7 @@
     "check": "bunx biome check --write ./src"
   },
   "dependencies": {
+    "@fontsource-variable/manrope": "^5.2.6",
     "@tailwindcss/vite": "^4.1.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
